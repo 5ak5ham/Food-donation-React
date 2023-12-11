@@ -5,9 +5,9 @@ function Navbar() {
   return (
     <div className="nav">
       <div className="topLeft">
-        <i className="topIcon fa-brands fa-square-instagram"></i>
-        <i className="topIcon fa-brands fa-square-x-twitter"></i>
-        <i className="topIcon fa-brands fa-square-facebook"></i>
+        <Link to="/">
+          <h2 className="navbarHead">ANNAPURTI</h2>
+        </Link>
       </div>
       <div className="topCentre">
         <ul className="topList">
@@ -18,15 +18,19 @@ function Navbar() {
             <Link to="/about">ABOUT</Link>
           </li>
           <li className="topListItem">
-            <Link to="/sign">SIGN</Link>
+            <Link to="/maps">MAPS</Link>
           </li>
-          <li className="topListItem">
-            <Link to="/signup">SIGN UP</Link>
+          <li className="topListItem dropdown">
+            <span className="dropbtn">SIGN IN/UP</span>
+            <div className="dropdown-content">
+              <Link to="/sign">USER</Link>
+              <Link to="/">NGO</Link>
+            </div>
           </li>
         </ul>
       </div>
       <div className="topRight">
-        <h2 className="navbarHead">ATMANIRBHAR BHARAT</h2>
+        <button className="donate">Donate Now</button>
       </div>
     </div>
   );

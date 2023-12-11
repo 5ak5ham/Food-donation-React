@@ -1,3 +1,4 @@
+import Footer from "./Footer/Footer";
 import Navbar from "./Navbar/Navbar";
 
 function Base({ title = "Welcome to our Website", children }) {
@@ -5,6 +6,7 @@ function Base({ title = "Welcome to our Website", children }) {
     <div>
       <Navbar />
       {children}
+      <Footer />
     </div>
   );
 }

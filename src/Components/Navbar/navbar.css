@@ -1,7 +1,7 @@
 .nav {
   width: 100%;
   height: 50px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   position: sticky;
   top: 0;
   display: flex;
@@ -68,5 +68,66 @@ a:hover {
   color: rgb(0, 0, 0); /* Change color on hover if desired */
 }
 .navbarHead {
+  color: red;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(43, 39, 39);
+  font-size: 18px;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-decoration: underline;
+}
+
+/* Display dropdown options vertically */
+.dropdown-content a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Style the dropdown options on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.donate {
+  background-color: red;
+  width: 135px;
+  padding: 10px;
+  height: 40px;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.donate:hover {
+  background-color: transparent;
+  border-color: red;
   color: red;
 }

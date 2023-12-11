@@ -1,9 +1,10 @@
 import Base from "../Components/Base";
+import "./home.css";
 
 function Home() {
   return (
     <Base>
-      <div className="home">Home here</div>
+      <div className="Home-page"></div>
     </Base>
   );
 }
